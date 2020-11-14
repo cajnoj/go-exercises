@@ -13,6 +13,7 @@ examples/
 # Ignore output
 *.gif
 *.out
+*.svg
 
 # Ignore binaries
 *.a
