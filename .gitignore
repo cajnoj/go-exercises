@@ -14,6 +14,8 @@ examples/
 *.gif
 *.out
 *.svg
+*.jpg
+*.png
 
 # Ignore binaries
 *.a

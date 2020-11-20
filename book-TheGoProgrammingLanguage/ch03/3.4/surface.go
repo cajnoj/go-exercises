@@ -167,9 +167,9 @@ func color(z, minz, maxz float64) int {
 	)
 
 	// Scores
-	redScore := (z - minz) / (maxz - minz)                  // Distance from max
-	greenScore := math.Abs(z-(maxz+minz)/2) / (maxz - minz) // Distance from mid
-	blueScore := (maxz - z) / (maxz - minz)                 // Distance from min
+	redScore := (z - minz) / (maxz - minz)                      // Distance from max
+	greenScore := math.Abs(z-(maxz+minz)/2) / (maxz - minz) / 2 // Distance from mid
+	blueScore := (maxz - z) / (maxz - minz)                     // Distance from min
 
 	// Intensities
 	redIntensity := colorIntensity(redScore)
