@@ -6,25 +6,11 @@ import (
 	"book-TheGoProgrammingLanguage/ch03/3.9/brat"
 	"book-TheGoProgrammingLanguage/ch03/3.9/c128"
 	"book-TheGoProgrammingLanguage/ch03/3.9/c64"
-	"fmt"
 	"io"
 	"log"
 	"net/http"
-	"os"
 	"strconv"
 )
-
-func create(fn string) *os.File {
-	var f *os.File
-	var err error
-
-	if f, err = os.Create(fn); err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
-	}
-
-	return f
-}
 
 func main() {
 	http.HandleFunc("/", handler)
