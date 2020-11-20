@@ -2,10 +2,10 @@
 package main
 
 import (
-	"book-TheGoProgrammingLanguage/ch03/3.8/bfloat"
-	"book-TheGoProgrammingLanguage/ch03/3.8/brat"
-	"book-TheGoProgrammingLanguage/ch03/3.8/c128"
-	"book-TheGoProgrammingLanguage/ch03/3.8/c64"
+	"book-TheGoProgrammingLanguage/ch03/3.9/bfloat"
+	"book-TheGoProgrammingLanguage/ch03/3.9/brat"
+	"book-TheGoProgrammingLanguage/ch03/3.9/c128"
+	"book-TheGoProgrammingLanguage/ch03/3.9/c64"
 	"fmt"
 	"io"
 	"log"
