@@ -10,6 +10,9 @@
 # Ignore book examples
 examples/
 
+# Ignore data
+data/
+
 # Ignore output
 *.gif
 *.out
