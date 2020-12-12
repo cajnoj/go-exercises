@@ -25,3 +25,7 @@ data/
 *.so
 *.o
 book-TheGoProgrammingLanguage/ch04/4.12/data.json
+book-TheGoProgrammingLanguage/ch04/4.13/api.key
+
+# Secrets
+*.secret
