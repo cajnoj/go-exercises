@@ -14,7 +14,7 @@ type user struct {
 	ID        int
 	Login     string
 	HTMLURL   string `json:"html_url"`
-	SiteAdmin bool
+	SiteAdmin bool   `json:"site_admin"`
 }
 
 var users []*user
