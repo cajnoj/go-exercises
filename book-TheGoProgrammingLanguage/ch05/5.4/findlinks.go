@@ -19,21 +19,15 @@ func main() {
 	}
 }
 
-var elementLinkKeys map[atom.Atom]string
-
-func init() {
-	elementLinkKeys = map[atom.Atom]string{
-		atom.A:      "href",
-		atom.Img:    "src",
-		atom.Script: "src",
-		atom.Link:   "href",
-	}
+var elementLinkKeys = map[atom.Atom]string{
+	atom.A:      "href",
+	atom.Img:    "src",
+	atom.Script: "src",
+	atom.Link:   "href",
 }
 
 func visit(links []string, n *html.Node) []string {
-	var ok bool
-	var key string
-	if key, ok = elementLinkKeys[n.DataAtom]; ok {
+	if key, ok := elementLinkKeys[n.DataAtom]; ok {
 		for _, a := range n.Attr {
 			if a.Key == key {
 				links = append(links, a.Val)
